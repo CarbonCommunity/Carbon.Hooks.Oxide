@@ -17,3 +17,6 @@
 # misc
 .[Rr]elease/
 .[Rr]edist/
+
+# Codegen
+[Ss]rc/
