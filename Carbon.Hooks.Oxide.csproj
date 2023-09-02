@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<Product>Carbon.Hooks.Oxide</Product>
 		<OutputType>Library</OutputType>
-		<ProjectGuid>{28195F54-F8A2-49D6-AE91-033D078502AD}</ProjectGuid>
+		<ProjectGuid>{3AFD9CF3-D1AB-494F-869E-698F687CBBBA}</ProjectGuid>
 	</PropertyGroup>
 
 	<Import Project="$(SolutionDir)\.msbuild\Common.props" />
