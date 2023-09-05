@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Build">
+	<Import Project="$(SolutionDir)\.msbuild\Common.props" />
+	<Import Project="$(SolutionDir)\.msbuild\ReferencesRust.props" />
+	<Import Project="$(SolutionDir)\.msbuild\AssemblyName.props" />
+
 	<PropertyGroup>
 		<Product>Carbon.Hooks.Oxide</Product>
 		<OutputType>Library</OutputType>
 		<ProjectGuid>{3AFD9CF3-D1AB-494F-869E-698F687CBBBA}</ProjectGuid>
+		<DebugType>none</DebugType>
 	</PropertyGroup>
-
-	<Import Project="$(SolutionDir)\.msbuild\Common.props" />
-	<Import Project="$(SolutionDir)\.msbuild\ReferencesRust.props" />
-	<Import Project="$(SolutionDir)\.msbuild\AssemblyName.props" />
 
 	<ItemGroup>
 		<PackageReference Include="Lib.Harmony" Version="2.2.2" />
