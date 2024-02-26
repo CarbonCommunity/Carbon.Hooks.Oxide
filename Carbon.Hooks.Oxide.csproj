@@ -12,7 +12,6 @@
 	<Import Project="$(SolutionDir)\.msbuild\AssemblyName.props" />
 
 	<ItemGroup>
-		<PackageReference Include="Lib.Harmony.Thin" Version="2.3.0" />
 		<ProjectReference Include="$(SolutionDir)\Carbon\Carbon.csproj" Private="false" />
 	</ItemGroup>
 
