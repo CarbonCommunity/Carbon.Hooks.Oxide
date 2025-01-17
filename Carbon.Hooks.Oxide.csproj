@@ -5,7 +5,6 @@
 	<PropertyGroup>
 		<Product>Carbon.Hooks.Oxide</Product>
 		<OutputType>Library</OutputType>
-		<ProjectGuid>{3AFD9CF3-D1AB-494F-869E-698F687CBBBA}</ProjectGuid>
 		<DebugType>none</DebugType>
 	</PropertyGroup>
 
