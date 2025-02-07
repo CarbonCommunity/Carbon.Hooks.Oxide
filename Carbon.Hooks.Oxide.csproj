@@ -14,7 +14,11 @@
 		<ProjectReference Include="$(SolutionDir)\Carbon\Carbon.csproj" Private="false" />
 	</ItemGroup>
 
-	<Target Name="CustomRelease" AfterTargets="Build" DependsOnTargets="PrepareRelease">
+	<Target Name="NormalRelease" AfterTargets="Build" DependsOnTargets="PrepareRelease" Condition="!($(DefineConstants.Contains('HOOKGEN')))">
+		<DownloadFile DestinationFolder="$(c_hooks)" SourceUrl="https://carbonmod.gg/redist/server/$(Configuration.ToLower().Replace('minimal', 'release'))/$(CarbonProtocol)/carbon/managed/hooks/Carbon.Hooks.Oxide.dll" ContinueOnError="true" />
+	</Target>
+
+	<Target Name="HookRelease" AfterTargets="Build" DependsOnTargets="PrepareRelease" Condition="$(DefineConstants.Contains('HOOKGEN'))">
 		<Copy SourceFiles="$(OutputPath)$(Product).dll" DestinationFolder="$(c_hooks)" />
 	</Target>
 </Project>
